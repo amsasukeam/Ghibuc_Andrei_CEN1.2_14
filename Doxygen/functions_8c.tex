@@ -1,0 +1,102 @@
+\hypertarget{functions_8c}{}\section{functions.\+c File Reference}
+\label{functions_8c}\index{functions.\+c@{functions.\+c}}
+{\ttfamily \#include \char`\"{}functions.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{functions_8c_a4b45bf427922766dc6ddc2e3ded3f0bf}{orientations}} (int \mbox{\hyperlink{main_8c_a3a28340bd80696cb22fef5c848619717}{orientation}} \mbox{[}$\,$\mbox{]}\mbox{[}1001\mbox{]}, int i, int n)
+\item 
+void \mbox{\hyperlink{functions_8c_a55498fb4099dbd29049e5d2392eeb66e}{depth\+\_\+first\+\_\+search}} (int source)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{functions_8c_a17c4d922d74a6b2e07437f6cbb812a7f}{reach}} \mbox{[}1001\mbox{]}
+\item 
+int \mbox{\hyperlink{functions_8c_a617a47c70795bcff659815ad0efd2266}{counter}} = 0
+\item 
+int \mbox{\hyperlink{functions_8c_a3a28340bd80696cb22fef5c848619717}{orientation}} \mbox{[}1001\mbox{]}\mbox{[}1001\mbox{]}
+\item 
+int \mbox{\hyperlink{functions_8c_a0ca58da3958fd8ec371f6a7fefd99a1a}{adjacency\+\_\+source}} \mbox{[}1001\mbox{]}
+\item 
+int \mbox{\hyperlink{functions_8c_aa372dbc8a23167d774b81f4e4a3efa0f}{adjacency\+\_\+destination}} \mbox{[}1001\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{functions_8c_a55498fb4099dbd29049e5d2392eeb66e}\label{functions_8c_a55498fb4099dbd29049e5d2392eeb66e}} 
+\index{functions.\+c@{functions.\+c}!depth\+\_\+first\+\_\+search@{depth\+\_\+first\+\_\+search}}
+\index{depth\+\_\+first\+\_\+search@{depth\+\_\+first\+\_\+search}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{depth\+\_\+first\+\_\+search()}{depth\_first\_search()}}
+{\footnotesize\ttfamily void depth\+\_\+first\+\_\+search (\begin{DoxyParamCaption}\item[{int}]{source }\end{DoxyParamCaption})}
+
+This function will do the tropological sort of the graph. 
+
+Definition at line 62 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8c_a4b45bf427922766dc6ddc2e3ded3f0bf}\label{functions_8c_a4b45bf427922766dc6ddc2e3ded3f0bf}} 
+\index{functions.\+c@{functions.\+c}!orientations@{orientations}}
+\index{orientations@{orientations}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{orientations()}{orientations()}}
+{\footnotesize\ttfamily void orientations (\begin{DoxyParamCaption}\item[{int}]{orientation\mbox{[}$\,$\mbox{]}\mbox{[}1001\mbox{]},  }\item[{int}]{i,  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Function that reads and makes the graph orientated. 
+
+Definition at line 34 of file functions.\+c.
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{functions_8c_aa372dbc8a23167d774b81f4e4a3efa0f}\label{functions_8c_aa372dbc8a23167d774b81f4e4a3efa0f}} 
+\index{functions.\+c@{functions.\+c}!adjacency\+\_\+destination@{adjacency\+\_\+destination}}
+\index{adjacency\+\_\+destination@{adjacency\+\_\+destination}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{adjacency\+\_\+destination}{adjacency\_destination}}
+{\footnotesize\ttfamily int adjacency\+\_\+destination\mbox{[}1001\mbox{]}}
+
+Vector that retain if the destination node allready appeared in the sort 
+
+Definition at line 29 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8c_a0ca58da3958fd8ec371f6a7fefd99a1a}\label{functions_8c_a0ca58da3958fd8ec371f6a7fefd99a1a}} 
+\index{functions.\+c@{functions.\+c}!adjacency\+\_\+source@{adjacency\+\_\+source}}
+\index{adjacency\+\_\+source@{adjacency\+\_\+source}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{adjacency\+\_\+source}{adjacency\_source}}
+{\footnotesize\ttfamily int adjacency\+\_\+source\mbox{[}1001\mbox{]}}
+
+Vector that retain if the source node allready appeared in the sort 
+
+Definition at line 24 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8c_a617a47c70795bcff659815ad0efd2266}\label{functions_8c_a617a47c70795bcff659815ad0efd2266}} 
+\index{functions.\+c@{functions.\+c}!counter@{counter}}
+\index{counter@{counter}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{counter}{counter}}
+{\footnotesize\ttfamily int counter = 0}
+
+This variable will be used to counter how many pieces were used in the sort. 
+
+Definition at line 14 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8c_a3a28340bd80696cb22fef5c848619717}\label{functions_8c_a3a28340bd80696cb22fef5c848619717}} 
+\index{functions.\+c@{functions.\+c}!orientation@{orientation}}
+\index{orientation@{orientation}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{orientation}{orientation}}
+{\footnotesize\ttfamily int orientation\mbox{[}1001\mbox{]}\mbox{[}1001\mbox{]}}
+
+A matrix that retain the orientations between the nodes of the graph. 
+
+Definition at line 19 of file functions.\+c.
+
+\mbox{\Hypertarget{functions_8c_a17c4d922d74a6b2e07437f6cbb812a7f}\label{functions_8c_a17c4d922d74a6b2e07437f6cbb812a7f}} 
+\index{functions.\+c@{functions.\+c}!reach@{reach}}
+\index{reach@{reach}!functions.\+c@{functions.\+c}}
+\subsubsection{\texorpdfstring{reach}{reach}}
+{\footnotesize\ttfamily int reach\mbox{[}1001\mbox{]}}
+
+This vector is a representation of the current node and if this node was allready visited. 
+
+Definition at line 9 of file functions.\+c.
+
